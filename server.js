@@ -13,4 +13,5 @@ app.get("/", function(request,response){
     response.end();
 });
 
-app.listen(8888);
+var port = Number(process.env.PORT || 8888);
+app.listen(port);
