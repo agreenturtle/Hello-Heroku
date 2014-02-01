@@ -5,7 +5,10 @@ var app = express();
 
 app.use(express.bodyParser());
 app.set('view engine', 'jade');
+
 app.use(express.static(process.cwd() + '/public'));
+app.use(express.static(process.cwd() + '/css'));
+app.use(express.static(process.cwd() + '/js'));
 
 app.get("/", function(request,response){
     response.render("application");
