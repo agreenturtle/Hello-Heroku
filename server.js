@@ -5,7 +5,7 @@ var mysql = require("mysql2");
 var app = express();
 
 app.use(express.bodyParser());
-app.set('view engine', 'jade');
+app.set('view engine', 'jade');  
 
 app.use(express.static(process.cwd() + '/public'));
 
